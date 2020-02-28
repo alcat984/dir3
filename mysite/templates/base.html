@@ -9,7 +9,7 @@
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
                 <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="{% url 'home' %}">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -17,7 +17,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -63,6 +63,16 @@
 <hr>
         {% block content %}
         {% endblock %}
+        </div>
+        </br>
+        <div class="container">
+                <div class="jumbotron">
+                        <h1 class="display-4">Welcome to the Global Directory of Fish & Seafood Providers</h1>
+                        <p class="lead">This is a suppliers Directory of Fish Importers, Exporters, Processors, Distributors, Wholesaler, Retailers, Brokers/Agents & Aquaculture developed by GLOBEFISH in collaboration with the FishInfoNetwork FIN. The main purpose of this information dataset is to allow users, the consultation of international fisheries professionals divided by markets and functions, aiming to promote fish trade.</p>
+                        <hr class="my-4">
+                        <p>You're welcome to list your company as a Fish & Seafood Provider. Click below to register!</p>
+                        <a class="btn btn-primary btn-lg" href="{% url 'signup' %}" role="button">Register</a>
+                      </div>
         </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
