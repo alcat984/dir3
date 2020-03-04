@@ -31,3 +31,8 @@ def secret_page(request):
 
 class SecretPage(TemplateView):
     template_name = 'secret_page.html'
+
+def company_reg(request):
+    return render(request, 'registration/company_reg.html', {
+        'company_reg': company_reg
+    })

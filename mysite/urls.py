@@ -9,5 +9,6 @@ urlpatterns = [
     path('secret', views.secret_page, name='secret'),
     path('secret2', views.SecretPage.as_view(), name='secret2'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('company-reg', views.company_reg, name='company_reg'),
     path('admin/', admin.site.urls),
 ]
