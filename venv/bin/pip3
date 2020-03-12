@@ -1,4 +1,4 @@
-#!/Users/alejandro/dev/django/dir3/venv/bin/python3
+#!/Users/silvioalejandrocatalano/dev/django/dir3/venv/bin/python3.8
 # -*- coding: utf-8 -*-
 import re
 import sys
