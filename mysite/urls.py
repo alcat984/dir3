@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from mysite.core import views
+import dashboard.views
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -10,4 +11,5 @@ urlpatterns = [
     path('secret2', views.SecretPage.as_view(), name='secret2'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
+    path('dashboard', dashboard.views.dashboard, name='dashboard'),
 ]
