@@ -38,13 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'mysite.core',
     'dashboard',
-=======
-    'mysite.core'
-    
->>>>>>> 004479514d37a0b9aa1ecebedbf3fb94434981cd
 ]
 
 MIDDLEWARE = [
